@@ -6,13 +6,14 @@ from datetime import date
 # definition of filenames
 data = ['chicago.csv','new_york_city.csv', 'washington.csv'];
 
-# definition of valid user enty
+# definition of valid user enrty
 Available_Data = ['Chicago', 'New York City', 'Washington']
 Valid_Month = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC',
                     'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December' ]
 Valid_Day = ['MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT', 'SUN', 'Monday',
                     'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday' ]
 Valid_City_Input = ['0', '1', '2', '3']
+Valid_Accept_Input = ['y', 'yes', 'Y', 'YES', 'Yes']
 
 def cls(): #clears screen to blank
     # found in stackoverflow.com
@@ -25,7 +26,8 @@ def color(color):# change text color
         print('\033[1;32;40m') # set color to green
     elif color == 'red':
         print('\033[1;31;40m') # set color to red
-   
+    elif color == 'yellow':
+        print('\033[1;33;40m') # set color to yellow
   
 def print_time_heading(c_choice):    # print header for time input
     cls()
@@ -213,7 +215,7 @@ def main():
         data = data_import(c_choice, t_choice)   
         print_result_heading(c_choice, t_choice)
         if data.empty:
-            print('\nNo data avaliable for this time period')
+            print('\nSorry, No data avaliable for this time period')
         else:
             min_max_time(data)
             rental_count(data)

@@ -14,7 +14,7 @@ Valid_Day = ['MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT', 'SUN', 'Monday',
                     'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday' ]
 Valid_City_Input = ['0', '1', '2', '3']
 
-def cls():
+def cls(): #clears screen to blank
     # found in stackoverflow.com
     os.system('cls' if os.name=='nt' else 'clear')
     

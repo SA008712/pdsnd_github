@@ -13,6 +13,7 @@ Valid_Month = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'O
 Valid_Day = ['MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT', 'SUN', 'Monday',
                     'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday' ]
 Valid_City_Input = ['0', '1', '2', '3']
+Valid_Accept_Input = ['y', 'yes', 'Y', 'YES', 'Yes']
 
 def cls():
     # found in stackoverflow.com

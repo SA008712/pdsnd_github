@@ -1,15 +1,23 @@
 ### Date created
-Include the date you created this project and README file.
+25 May 2020
 
 ### Project Title
-Replace the Project Title
+pdsnd_github
 
 ### Description
-Describe what your project is about and what it does
+learninng to work with git repositorys on example bikesharere project
+bikeshare project from last training module was added to repositiory
+
 
 ### Files used
-Include the files used
+bikeshare_project.py
+.gitignore
+README.md
+
+### Data Files (in .gitignore)
+chicago.cvs
+new_york_city.csv
+washington.csv
+
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-

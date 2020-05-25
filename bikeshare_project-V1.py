@@ -36,7 +36,7 @@ def print_time_heading(c_choice):    # print header for time input
     print('Would you like to focus on a special month or day ?')
     print('Use \033[1;37;40mJAN - DEC\033[1;32;40m for month or \033[1;37;40mMON - SUN\033[1;32;40m for days, for no limitation press \033[1;37;40mENTER\033[1;32;40m\n')
   
-def time_filter(c_choice): # user input if time
+def time_filter(c_choice): # user input if time limits are wanted
     i=''
     while True:
         time_filter = input(i+'Please enter your choice:  \033[1;33;40m')

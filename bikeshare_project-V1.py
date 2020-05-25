@@ -94,7 +94,7 @@ def city_filter(): # user input if city
 def data_import(city_choice, time_choice): # import csv file and add columns
     month = ''
     day= ''
-    # ---- Load and Create additional collumns ----
+    # ---- Load and Create additional columns ----
     city_data = pd.read_csv(data[city_choice])                                                              # Load Data File
     city_data['Start Time'] = pd.to_datetime(city_data['Start Time'])                           # Create 'Start Time' Column
     city_data['hour'] = city_data['Start Time'].dt.hour                                                 # Create 'hour' Column

@@ -25,7 +25,8 @@ def color(color):# change text color
         print('\033[1;32;40m') # set color to green
     elif color == 'red':
         print('\033[1;31;40m') # set color to red
-   
+    elif color == 'yellow':
+        print('\033[1;33;40m') # set color to yellow
   
 def print_time_heading(c_choice):    # print header for time input
     cls()

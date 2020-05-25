@@ -6,7 +6,7 @@ from datetime import date
 # definition of filenames
 data = ['chicago.csv','new_york_city.csv', 'washington.csv'];
 
-# definition of valid user enty
+# definition of valid user enrty
 Available_Data = ['Chicago', 'New York City', 'Washington']
 Valid_Month = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC',
                     'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December' ]
@@ -215,7 +215,7 @@ def main():
         data = data_import(c_choice, t_choice)   
         print_result_heading(c_choice, t_choice)
         if data.empty:
-            print('\nNo data avaliable for this time period')
+            print('\nSorry, No data avaliable for this time period')
         else:
             min_max_time(data)
             rental_count(data)
